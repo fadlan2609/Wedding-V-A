@@ -479,7 +479,7 @@ document.head.appendChild(particleStyle);
 // RSVP Form dengan Google Sheet
 const rsvpForm = document.getElementById('rsvp-form');
 const rsvpMessage = document.getElementById('rsvp-status-message');
-const RSVP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyXDZL7sxNQpZn1VVn9w-oayiN-VVB1PiQ3rfLMWTMDuhJs2GdHQRMZvo5ijb-tpNKh/exec';
+const RSVP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz9JtiH9np3l_YWr6kSUHF2tw-_6yty3vuqaTgXCu3kjcBOS8cZTs7hxHXTPFKsESVg/exec';
 
 async function loadRSVPData() {
   const tableBody = document.getElementById('rsvp-table-body');
