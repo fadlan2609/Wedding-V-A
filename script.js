@@ -184,9 +184,12 @@ function enableAudioOnInteraction() {
   document.removeEventListener('scroll', enableAudioOnInteraction);
 }
 
-document.addEventListener('click', enableAudioOnInteraction);
-document.addEventListener('touchstart', enableAudioOnInteraction);
-document.addEventListener('scroll', enableAudioOnInteraction, { once: true });
+const openBtn = document.getElementById('open-invitation');
+
+openBtn?.addEventListener('click', () => {
+  playMusic();
+  scrollToSection('info');
+});
 
 // Countdown
 function updateCountdown() {
