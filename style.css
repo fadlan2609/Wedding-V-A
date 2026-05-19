@@ -1302,7 +1302,7 @@ body {
 
 .rsvp-card-glass {
     flex: 1;
-    min-width: 320px;
+    min-width:unset;
     max-width: 480px;
     background: rgba(255, 255, 255, 0.4);
     -webkit-backdrop-filter: blur(12px);
@@ -1401,7 +1401,7 @@ body {
 
 .rsvp-data-glass {
     flex: 1;
-    min-width: 380px;
+    min-width: unset;
     background: rgba(255, 255, 255, 0.4);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
@@ -1720,5 +1720,98 @@ body {
 @media (max-width: 480px) {
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ===== FIX MOBILE OVERFLOW ===== */
+html, body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+
+*{
+    max-width:100%;
+}
+
+.section,
+.section-container,
+.home-cover,
+.timeline-alternating,
+.rsvp-wrapper,
+.acara-glass-container,
+.gallery-grid{
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+@media(max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .section-container{
+        width:100%;
+        padding:70px 18px;
+    }
+
+    .nav-container{
+        width:100%;
+        overflow:hidden;
+    }
+
+    .nav-menu{
+        flex-wrap:wrap;
+        gap:6px;
+    }
+
+    .rsvp-wrapper,
+    .acara-glass-container,
+    .couple-wrapper{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    .rsvp-card-glass,
+    .rsvp-data-glass,
+    .gift-glass-card,
+    .acara-glass-card{
+        width:100%;
+        min-width:unset;
+        max-width:100%;
+    }
+
+    .timeline-content-alt{
+        width:100%;
+        max-width:100%;
+    }
+
+    .bank-glass{
+        flex-direction:column;
+        text-align:center;
+        gap:12px;
+    }
+
+    .bank-info-glass{
+        text-align:center;
+    }
+
+    .lightbox-content{
+        width:100%;
+        padding:0 10px;
+    }
+
+    #lightbox-img{
+        width:100%;
+        max-width:100%;
+        height:auto;
     }
 }
