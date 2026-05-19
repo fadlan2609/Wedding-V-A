@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>The Wedding of Vinny & Yopie | Undangan Pernikahan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader-ring"></div>
+      <div class="loader-flower">🌿</div>
+      <p class="loader-text">Vivi & Albian</p>
+    </div>
+
+    <!-- Music Control Button -->
+    <button
+      id="music-toggle"
+      class="music-float-btn"
+      aria-label="Putar atau jeda musik"
+      title="Putar atau Jeda Musik"
+    >
+      <i class="fas fa-music" aria-hidden="true"></i>
+    </button>
+
+    <!-- Header Navigation -->
+    <nav
+      class="header-nav"
+      id="header-nav"
+      aria-label="Navigasi utama undangan"
+    >
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h3>V<span>&</span>A</h3>
+        </div>
+        <div class="nav-menu">
+          <button
+            class="nav-link active"
+            data-section="home"
+            aria-label="Ke halaman utama"
+            title="Halaman Utama"
+          >
+            Home
+          </button>
+          <button
+            class="nav-link"
+            data-section="info"
+            aria-label="Ke informasi mempelai"
+            title="Info Mempelai"
+          >
+            Info
+          </button>
+          <button
+            class="nav-link"
+            data-section="story"
+            aria-label="Ke cerita perjalanan cinta"
+            title="Kisah Cinta"
+          >
+            Story
+          </button>
+          <button
+            class="nav-link"
+            data-section="acara"
+            aria-label="Ke detail acara"
+            title="Jadwal Acara"
+          >
+            Acara
+          </button>
+          <button
+            class="nav-link"
+            data-section="galeri"
+            aria-label="Ke galeri foto"
+            title="Galeri Foto"
+          >
+            Galeri
+          </button>
+          <button
+            class="nav-link"
+            data-section="rsvp"
+            aria-label="Ke form konfirmasi kehadiran"
+            title="Konfirmasi Kehadiran"
+          >
+            RSVP
+          </button>
+          <button
+            class="nav-link"
+            data-section="gifts"
+            aria-label="Ke informasi hadiah"
+            title="Hadiah & Doa"
+          >
+            Gifts
+          </button>
+        </div>
+        <div class="nav-guest">
+          <i class="fas fa-user-circle" aria-hidden="true"></i>
+          <span id="nav-guest-name">Tamu</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- HOME Section -->
+      <section id="home" class="section full-screen">
+  <div class="home-cover">
+
+    <div class="top-invite">
+      <h2>YOU ARE INVITED</h2>
+    </div>
+
+    <div class="home-bottom-content">
+
+      <div class="countdown-box" id="countdown">
+        <div class="time-card">
+          <span id="days">00</span><small>Hari</small>
+        </div>
+        <div class="time-card">
+          <span id="hours">00</span><small>Jam</small>
+        </div>
+        <div class="time-card">
+          <span id="minutes">00</span><small>Menit</small>
+        </div>
+        <div class="time-card">
+          <span id="seconds">00</span><small>Detik</small>
+        </div>
+      </div>
+
+      <h1 class="home-couple-name">Vivi & Albian</h1>
+
+      <div class="guest-name-wrapper">
+        <p class="kepada">Kepada Yth.</p>
+        <p class="guest-name" id="home-guest-name">Tamu Undangan</p>
+      </div>
+
+      <button class="open-btn" id="scroll-down-btn">
+        Buka Undangan
+      </button>
+
+    </div>
+
+  </div>
+</section>
+      <!-- INFO Section -->
+      <section
+        id="info"
+        class="section full-screen"
+        aria-label="Informasi kedua mempelai"
+      >
+        <div class="floating-hearts" id="floating-hearts"></div>
+        <div class="section-container">
+          <h2 class="section-title" data-aos="fade-up">
+            <i class="fas fa-heart" aria-hidden="true"></i> Tentang Mempelai
+          </h2>
+          <div class="couple-wrapper">
+            <!-- Mempelai Wanita -->
+            <div
+              class="couple-card"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            >
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="portrait-frame">
+                    <img
+                      src="assets/info/wanita.jpeg"
+                      alt="Foto Vivi Puspita Sari Sihotang - mempelai wanita"
+                    />
+                  </div>
+                  <h3>Vivi Puspita Sari Sihotang</h3>
+                  <p class="card-subtitle">Mempelai Wanita</p>
+                  <!-- Nama orang tua di card front -->
+                  <div class="parent-front">
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                    <p class="parent-name">Putri dari</p>
+                    <p class="parent-name-detail">Bapak Surya Efendi Sihotang & Ibu Istriani</p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <i class="fas fa-heart" aria-hidden="true"></i>
+                  <h4>Putri dari</h4>
+                  <p>
+                    <strong>Surya Efendi Sihotang</strong><br />&<br /><strong
+                      >Ibu Istriani</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="love-icon-desktop">
+              <i class="fas fa-heart animated-love" aria-hidden="true"></i>
+            </div>
+            <div class="mobile-love">
+              <i class="fas fa-heart animated-love" aria-hidden="true"></i>
+            </div>
+            
+            <!-- Mempelai Pria -->
+            <div
+              class="couple-card"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="portrait-frame">
+                    <img
+                      src="assets/info/pria.jpeg"
+                      alt="Foto Albian Amit - mempelai pria"
+                      class="portrait-img"
+                    />
+                  </div>
+                  <h3>Albian Amit</h3>
+                  <p class="card-subtitle">Mempelai Pria</p>
+                  <!-- Nama orang tua di card front -->
+                  <div class="parent-front">
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                    <p class="parent-name">Putra dari</p>
+                    <p class="parent-name-detail">Bapak Amit Bin Rumot & Ibu Bianah Jasni</p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <i class="fas fa-heart" aria-hidden="true"></i>
+                  <h4>Putra dari</h4>
+                  <p>
+                    <strong>Amit Bin Rumot</strong><br />&<br /><strong
+                      >Bianah Jasni</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="scroll-down-btn-small"
+          aria-label="Gulir ke bagian selanjutnya"
+          title="Scroll ke bawah"
+        >
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </section>
+
+      <!-- STORY Section -->
+      <section
+        id="story"
+        class="section full-screen"
+        aria-label="Cerita perjalanan cinta"
+      >
+        <div class="section-container">
+          <h2 class="section-title" data-aos="fade-up">
+            <i class="fas fa-book-open" aria-hidden="true"></i> Perjalanan Cinta
+          </h2>
+          <div class="timeline-alternating">
+            <div class="timeline-item-alt" data-aos="fade-right">
+              <div class="timeline-icon-alt">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content-alt">
+                <h4>Perkenalan</h4>
+                <p>
+                  Kami berkenalan di Malaysia, tepat di
+                  Penang, kala itu tahun 2023 kami mulai
+                  kenal, Albian bersuku Murut kelahiran
+                  Kampung Ambual Keningau Sabah
+                  (Malaysia) sedangkan Vivi bersuku Batak
+                  kelahiran Pematangsiantar (Indonesia).
+                  Kami yang berlatar belakang Berbeda
+                  memutuskan untuk Berpacaran.
+                </p>
+                <span class="timeline-year">2023</span>
+              </div>
+            </div>
+            <div class="timeline-item-alt right" data-aos="fade-left">
+              <div class="timeline-icon-alt">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content-alt">
+                <h4>Lamaran</h4>
+                <p>
+                  Pada 31 Agustus 2025, Saat itu dalam
+                  asuhan dua iman yang Berbeda, Albian
+                  memutuskan untuk beragama Islam. Pada
+                  saat itu pula Albian membawa serta
+                  keluarganya untuk melamar Vivi, dengan restu dari kedua keluarga, kami memutuskan untuk membangun sebuah ikatan suci. Tepat di hari ulangt
+                </p>
+                <span class="timeline-year">2025</span>
+              </div>
+            </div>
+            <div class="timeline-item-alt" data-aos="fade-right">
+              <div class="timeline-icon-alt">
+                <i class="fas fa-mosque" aria-hidden="true"></i>
+              </div>
+              <div class="timeline-content-alt">
+                <h4>Pernikahan</h4>
+                <p>
+                 Bismillah, 29 Mei 2026 di Lk.01 Sukamulia (sinaksak) kami mengikat janji suci disaksikan orang tua dan sahabat, memohon rahmat Allah agar hari-hari setelahnya menjadi ruang belajar untuk saling menguatkan dan mengasihi, membangun rumah yang tenang, hangat, dan selalu kembali pada doa. 29 Mei 2026.
+                <strong>29 Mei 2026</strong>.
+                </p>
+                <span class="timeline-year">2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="scroll-down-btn-small"
+          aria-label="Gulir ke bagian selanjutnya"
+          title="Scroll ke bawah"
+        >
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </section>
+
+      <!-- ACARA Section -->
+      <section
+        id="acara"
+        class="section full-screen"
+        aria-label="Jadwal akad dan resepsi"
+      >
+        <div class="section-container">
+          <h2 class="section-title" data-aos="fade-up">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i> Akad &
+            Resepsi
+          </h2>
+          <div class="acara-glass-container">
+            <div
+              class="acara-glass-card"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <div class="glass-icon">
+                <i class="fas fa-ring" aria-hidden="true"></i>
+              </div>
+              <h3>Akad Nikah</h3>
+              <div class="glass-info">
+                <p>
+                  <i class="fas fa-calendar-day" aria-hidden="true"></i> Jumat,
+                  29 Mei 2026
+                </p>
+                <p>
+                  <i class="fas fa-clock" aria-hidden="true"></i> 08.00 WIB -
+                  Selesai
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  Sinaksak, Kabupaten Simalungun, Sumatera Utara
+                </p>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/Gu8fJAYekgzdGskC8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="glass-btn"
+              >
+                <i class="fas fa-directions" aria-hidden="true"></i> Buka Maps
+              </a>
+            </div>
+            <div
+              class="acara-glass-card"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <div class="glass-icon">
+                <i class="fas fa-champagne-glasses" aria-hidden="true"></i>
+              </div>
+              <h3>Resepsi</h3>
+              <div class="glass-info">
+                <p>
+                  <i class="fas fa-calendar-day" aria-hidden="true"></i> Sabtu,
+                  30 Mei 2026
+                </p>
+                <p>
+                  <i class="fas fa-clock" aria-hidden="true"></i> 10.00 WIB -
+                  Selesai
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  Sinaksak, Kabupaten Simalungun, Sumatera Utara
+                </p>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/Gu8fJAYekgzdGskC8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="glass-btn"
+              >
+                <i class="fas fa-directions" aria-hidden="true"></i> Buka Maps
+              </a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="scroll-down-btn-small"
+          aria-label="Gulir ke bagian selanjutnya"
+          title="Scroll ke bawah"
+        >
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </section>
+
+      <!-- GALERI Section -->
+      <section
+        id="galeri"
+        class="section full-screen"
+        aria-label="Galeri foto kenangan"
+      >
+        <div class="section-container">
+          <h2 class="section-title" data-aos="fade-up">
+            <i class="fas fa-images" aria-hidden="true"></i> Galeri Kenangan
+          </h2>
+          <p class="galeri-quote" data-aos="fade-up">
+            "Setiap foto menyimpan cerita, kebahagiaan yang abadi"
+          </p>
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+        <button
+          class="scroll-down-btn-small"
+          aria-label="Gulir ke bagian selanjutnya"
+          title="Scroll ke bawah"
+        >
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </section>
+
+      <!-- Lightbox Modal -->
+      <div
+        id="lightbox-modal"
+        class="lightbox-modal"
+        role="dialog"
+        aria-label="Preview foto galeri"
+      >
+        <div class="lightbox-content">
+          <button
+            class="lightbox-close"
+            aria-label="Tutup preview foto"
+            title="Tutup"
+          >
+            &times;
+          </button>
+          <div class="lightbox-slider">
+            <button
+              class="lightbox-prev"
+              aria-label="Foto sebelumnya"
+              title="Sebelumnya"
+            >
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <img id="lightbox-img" src="" alt="Preview foto" />
+            <button
+              class="lightbox-next"
+              aria-label="Foto berikutnya"
+              title="Selanjutnya"
+            >
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="lightbox-caption"></div>
+        </div>
+      </div>
+
+      <!-- RSVP Section -->
+      <section
+        id="rsvp"
+        class="section full-screen"
+        aria-label="Form konfirmasi kehadiran"
+      >
+        <div class="section-container">
+          <h2 class="section-title" data-aos="fade-up">
+            <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+            Konfirmasi Kehadiran
+          </h2>
+          <div class="rsvp-wrapper">
+            <div class="rsvp-card-glass" data-aos="fade-right">
+              <form id="rsvp-form">
+                <div class="input-group-glass">
+                  <i class="fas fa-user" aria-hidden="true"></i>
+                  <input
+                    type="text"
+                    id="rsvp-name"
+                    placeholder="Nama Lengkap"
+                    required
+                    title="Masukkan nama lengkap Anda"
+                  />
+                </div>
+                <div class="input-group-glass">
+                  <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                  <select
+                    id="rsvp-status"
+                    required
+                    title="Pilih status kehadiran Anda"
+                  >
+                    <option value="">Status Kehadiran</option>
+                    <option value="Hadir">✅ Hadir</option>
+                    <option value="Tidak Hadir">❌ Tidak Hadir</option>
+                    <option value="Ragu">🤔 Masih Ragu</option>
+                  </select>
+                </div>
+                <div class="input-group-glass">
+                  <i class="fas fa-users" aria-hidden="true"></i>
+                  <input
+                    type="number"
+                    id="rsvp-guests"
+                    placeholder="Jumlah Tamu"
+                    min="1"
+                    max="10"
+                    title="Masukkan jumlah tamu"
+                  />
+                </div>
+                <div class="input-group-glass">
+                  <i class="fas fa-comment" aria-hidden="true"></i>
+                  <textarea
+                    id="rsvp-message"
+                    placeholder="Ucapan & Doa (Opsional)"
+                    title="Tulis ucapan atau doa"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn-submit-glass"
+                  aria-label="Kirim konfirmasi kehadiran"
+                  title="Kirim RSVP"
+                >
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i> Kirim
+                  Konfirmasi
+                </button>
+              </form>
+              <div id="rsvp-status-message" class="rsvp-message"></div>
+            </div>
+
+            <div class="rsvp-data-glass" data-aos="fade-left">
+              <h4>
+                <i class="fas fa-list" aria-hidden="true"></i> Data Konfirmasi
+                Kehadiran
+              </h4>
+              <div class="table-wrapper">
+                <table id="rsvp-table">
+                  <thead>
+                    <tr>
+                      <th>Timestamp</th>
+                      <th>Nama Tamu</th>
+                      <th>Status</th>
+                      <th>Jumlah</th>
+                      <th>Ucapan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="rsvp-table-body">
+                    <tr>
+                      <td colspan="5" class="rsvp-loading">
+                        Memuat data...<\/td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="scroll-down-btn-small"
+          aria-label="Gulir ke bagian selanjutnya"
+          title="Scroll ke bawah"
+        >
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </section>
+
+      <!-- GIFTS Section -->
+      <section
+        id="gifts"
+        class="section full-screen"
+        aria-label="Informasi hadiah dan doa"
+      >
+        <div class="section-container">
+          <h2 class="section-title" data-aos="fade-up">
+            <i class="fas fa-gift" aria-hidden="true"></i> Kirim Hadiah & Doa
+          </h2>
+          <div class="gift-glass-card" data-aos="flip-up">
+            <div class="gift-icon-glass">
+              <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+            </div>
+            <h3>VIVI PUSPITA SARI SIHOTANG</h3>
+            <div class="bank-glass">
+              <i class="fas fa-university" aria-hidden="true"></i>
+              <div class="bank-info-glass">
+                <p class="bank-name-glass">BRI</p>
+                <p class="bank-name-glass">vivipuspitasari sihotang</p>
+                <p class="bank-number-glass">5353 0100 9525 504</p>
+              </div>
+            </div>
+            <div class="bank-glass">
+              <i class="fas fa-university" aria-hidden="true"></i>
+              <div class="bank-info-glass">
+                <p class="bank-name-glass">Cimb Malaysia</p>
+                <p class="bank-name-glass">Ambit Amit/Vivipuspita sari</p>
+                <p class="bank-number-glass">7639000222/7646134600</p>
+              </div>
+            </div>
+            <div class="doa-glass">
+              <i class="fas fa-quote-left" aria-hidden="true"></i>
+              <p>
+                "Semoga Allah SWT membalas kebaikan dan kemurahan hati
+                Bapak/Ibu/Saudara/i. Semoga dilancarkan segala urusan,
+                dilimpahkan keberkahan, kebahagiaan dunia dan akhirat."
+              </p>
+            </div>
+            <div class="quran-glass">
+              <i class="fas fa-quran" aria-hidden="true"></i>
+              <p class="quran-arab">
+                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+                لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+              </p>
+              <p class="quran-arti">
+                "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+                untukmu pasangan dari jenismu sendiri, agar kamu cenderung dan
+                merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa
+                kasih dan sayang."
+              </p>
+              <span>— QS. Ar-Rum: 21</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Copyright -->
+    <footer class="footer-copyright">
+      <p>© 2026 | Vivi & Albian's Wedding. All rights reserved.</p>
+      <br />
+      <small>
+        Web Design & Development by <strong>Fadlan F F</strong>
+        <a
+          href="https://www.instagram.com/fdlann.26/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-instagram-link"
+          aria-label="Kunjungi Instagram Fadlan F F"
+          title="Instagram"
+        >
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+      </small>
+    </footer>
+
+    <audio id="bgm" loop preload="auto">
+      <source src="assets/music/lagu.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
